@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Player Checkers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Pop-up Start Screen -->
+    <div id="start-screen">
+        <h2>Click to Start the Game</h2>
+        <button id="start-game-btn">Start Game</button>
+    </div>
+
+    <!-- Game Content (Hidden Initially) -->
+    <div id="game-container" class="hidden">
+        <h1>EduGames: Checkers Game</h1>
+        <div class="turn-indicator">Player Turn: <span id="current-turn">Red</span></div>
+        <div class="board-container">
+            <div id="board"></div>
+        </div>
+        <div class="buttons">
+            <button id="restart-btn">Restart Game</button>
+            <button id="undo-btn">Undo Last Move</button>
+        </div>
+    <div id="scoreboard">
+    <div class="player-score">
+        <h3>Red Player</h3>
+        <p>Remaining: <span id="red-count">12</span></p>
+    </div>
+    <div class="player-score">
+        <h3>Black Player</h3>
+        <p>Remaining: <span id="black-count">12</span></p>
+    </div>
+
+      <div id="question-container" class="hidden">
+    <div id="question-box">
+        <p id="question-text"></p>
+        <div id="question-choices"></div>
+    </div>
+</div>
+     
+      <div id="victory-message" class="hidden">
+    <div id="victory-box">
+        <h2 id="winner-text"></h2>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+</div>
+      
+   <div id="question-container" class="hidden">
+    <div id="question-box">
+        <p id="question-text"></p>
+        <p id="timer">Time left: <span id="countdown">10</span>s</p>
+        <div id="question-choices"></div>
+    </div>
+</div>
+     
+     <!-- Timer Display on Right Side -->
+<div id="timer-container">
+    <p>Time Left: <span id="countdown">10</span>s</p>
+</div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
